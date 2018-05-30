@@ -9,6 +9,10 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { LandingComponent } from './landing/landing.component';
 import { HomeComponent } from './home/home.component';
+import {MatSnackBarModule} from '@angular/material';
+import {MatToolbarModule} from '@angular/material';
+import {MatTabsModule} from '@angular/material';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +27,9 @@ import { HomeComponent } from './home/home.component';
     MatInputModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
+    MatSnackBarModule,
+    MatToolbarModule,
+    MatTabsModule,
     RouterModule.forRoot([
       {
         path: '',
