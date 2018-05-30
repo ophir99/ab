@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-landing',
@@ -8,7 +9,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 })
 export class LandingComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   exploreForm = new FormGroup({
     username: new FormControl('', [Validators.required]),
@@ -19,6 +20,7 @@ export class LandingComponent implements OnInit {
 
   exploreIn() {
     console.log(this.exploreForm.value);
+    this.router.navigate(['/home']);
   }
 
 }

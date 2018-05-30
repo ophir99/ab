@@ -8,11 +8,13 @@ import { SimpleComponent } from './simple/simple.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { LandingComponent } from './landing/landing.component';
+import { HomeComponent } from './home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
     SimpleComponent,
-    LandingComponent
+    LandingComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -25,6 +27,10 @@ import { LandingComponent } from './landing/landing.component';
       {
         path: '',
         component: LandingComponent
+      },
+      {
+        path: 'home',
+        component: HomeComponent
       }
     ])
   ],
