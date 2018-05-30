@@ -1,0 +1,49 @@
+<div class="flex">
+  <div class="landing-page">
+
+    <div class="con">
+      <div>
+        <div class="op">
+        <div class="title">
+            <div>
+                Data
+            </div>
+            <div>
+                Trench
+            </div>
+        </div>
+        </div>
+      </div>
+      <div>
+
+        <form [formGroup]="exploreForm" (ngSubmit)="exploreIn()">
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <mat-form-field>
+                    <input type="text" matInput [placeholder]="'Username'" autocomplete="off" formControlName="username"/>
+                  </mat-form-field>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <mat-form-field>
+                    <input type="password" matInput [placeholder]="'Password'" autocomplete="off" formControlName="password"/>
+                  </mat-form-field>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button class="ex" mat-raised-button>explore</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+
+      </div>
+    </div>
+    
+  </div>
+</div>

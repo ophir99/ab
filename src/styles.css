@@ -1,0 +1,64 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body { margin: 0; 
+font-family: 'Roboto', sans-serif;
+}
+
+.flex{
+    display: flex;
+    flex-grow: 1;
+}
+
+
+.landing-page{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width:  100vw;
+    justify-content: center;
+    background-color: blue;
+}
+
+.con{
+    display: flex;
+ height: 75vh;
+ width: 75vw;
+ background-color: #FFF;
+ box-shadow: 2px 2px 2px #000;
+
+}
+.con > div{
+    display: flex;
+    width: 50%;
+    height: 100%;
+}
+
+.con > div:first-child{
+    width: 50%;
+    height: 100%;
+    background-image: url('./assets/background.jpeg');
+    background-size: cover;
+    background-position: center;
+   color: #FFF;
+}
+.con > div:last-child{
+    justify-content: center;
+}
+.op{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: rgba(0,0,0, 0.6);
+    width: 100% !important;
+    height: 100% !important;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+}
